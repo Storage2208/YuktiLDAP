@@ -1,0 +1,107 @@
+version: 1
+
+dn: ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Organizations
+
+dn: ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Company
+
+dn: ou=HR,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: HR
+
+dn: ou=IT,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: IT
+
+dn: ou=Finance,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Finance
+
+dn: ou=Users,ou=HR,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Admins,ou=HR,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Admins
+
+dn: uid=hr1,ou=Users,ou=HR,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: HR User
+sn: User
+uid: hr1
+userPassword:: aHIxMjM=
+
+dn: uid=hr-admin,ou=Admins,ou=HR,ou=Company,ou=Organizations,dc=example,dc=c
+ om
+objectClass: inetOrgPerson
+cn: HR Admin
+sn: Admin
+uid: hr-admin
+userPassword:: YWRtaW4xMjM=
+
+dn: ou=Users,ou=IT,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Admins,ou=IT,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Admins
+
+dn: uid=it1,ou=Users,ou=IT,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: IT User One
+sn: User
+uid: it1
+userPassword:: aXQxMjM=
+
+dn: uid=it2,ou=Users,ou=IT,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: IT User Two
+sn: User
+uid: it2
+userPassword:: aXQxMjM=
+
+dn: uid=it-admin,ou=Admins,ou=IT,ou=Company,ou=Organizations,dc=example,dc=c
+ om
+objectClass: inetOrgPerson
+cn: IT Admin
+sn: Admin
+uid: it-admin
+userPassword:: YWRtaW4xMjM=
+
+dn: ou=Users,ou=Finance,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Admins,ou=Finance,ou=Company,ou=Organizations,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Admins
+
+dn: uid=fin1,ou=Users,ou=Finance,ou=Company,ou=Organizations,dc=example,dc=c
+ om
+objectClass: inetOrgPerson
+cn: Finance User One
+sn: User
+uid: fin1
+userPassword:: ZmluMTIz
+
+dn: uid=fin2,ou=Users,ou=Finance,ou=Company,ou=Organizations,dc=example,dc=c
+ om
+objectClass: inetOrgPerson
+cn: Finance User Two
+sn: User
+uid: fin2
+userPassword:: ZmluMTIz
+
+dn: uid=fin-admin,ou=Admins,ou=Finance,ou=Company,ou=Organizations,dc=exampl
+ e,dc=com
+objectClass: inetOrgPerson
+cn: Finance Admin
+sn: Admin
+uid: fin-admin
+userPassword:: YWRtaW4xMjM=
+

@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+build/
+logs/
+*.log
+*.pem
+.env
+
